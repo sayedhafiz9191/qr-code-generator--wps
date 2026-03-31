@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+}
+
+.container {
+    width: 360px;
+    padding: 30px;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+textarea, input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 12px;
+
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+
+    background: rgba(255,255,255,0.05);
+    color: white;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Generate */
+#generateBtn {
+    background: #22c55e;
+    color: black;
+}
+
+/* Download */
+#downloadBtn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+/* QR Box */
+#qrcode {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background: white;
+}

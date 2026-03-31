@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>QR Generator PWA</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#10b981">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+.input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: #0f172a;
+    border: 1px solid #334155;
+}
+</style>
+</head>
+
+<body class="bg-slate-900 text-white min-h-screen flex items-center justify-center">
+
+<div class="w-full max-w-4xl p-6 bg-slate-800 rounded-2xl">
+
+<h1 class="text-2xl font-bold mb-4 text-center">QR Code Generator</h1>
+
+<!-- 🔥 INSTALL SECTION -->
+<div class="mb-4 text-center">
+    <p class="text-green-400 font-semibold">
+        ✅ دانلود برنامه امکان‌پذیر است
+    </p>
+
+    <button id="installBtn"
+    class="mt-2 px-4 py-3 bg-indigo-500 rounded-xl w-full hidden font-bold">
+    ⬇ Download App
+    </button>
+</div>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<!-- LEFT -->
+<div class="space-y-4">
+
+<textarea id="qrInput" class="input" placeholder="Enter text..."></textarea>
+
+<button id="generateBtn"
+class="w-full bg-emerald-500 py-3 rounded-xl font-bold">
+Generate QR
+</button>
+
+</div>
+
+<!-- RIGHT -->
+<div class="flex flex-col gap-4 items-center">
+
+<div class="bg-white p-4 rounded-xl">
+<div id="qrcode"></div>
+</div>
+
+<button id="downloadBtn" disabled
+class="w-full bg-blue-500 py-3 rounded-xl opacity-50 font-bold">
+⬇ Download QR
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
